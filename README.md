@@ -1,6 +1,6 @@
 # Reto-5
 # Caso 1
-Para este caso se crea una carpeta que contiene dos elementos; por un lado una carpeta llamada Paquete_figura que contiene el modulo ClassShape y __init__.py, en ClassShape es donde se desarrolla todo el programa principal. Además de Paquete_figura tambien hay otro modulo correspondiente a main, en este se ejecuta el codigo con una importación desde ClassShape. De esta manera el codigo esta contenido en un solo paquete. 
+En este caso, se organiza el código de manera sencilla y eficiente en un único paquete. Se crea una carpeta principal llamada Caso_1, que contiene dos elementos principales. Por un lado, una subcarpeta llamada Paquete_figura, que contiene el módulo ClassShape.py y un archivo __init__.py. En ClassShape.py se encuentra todo el código principal del programa. Además, fuera de la subcarpeta Paquete_figura, se encuentra el archivo main.py, desde donde se ejecuta el código principal mediante una importación desde ClassShape.py. De esta manera, todo el código está contenido en un solo paquete.
 ```
 Caso_1/
 |
@@ -11,22 +11,19 @@ Caso_1/
 └── main.py
 ```
 # Caso 2
-En este caso hay una carpeta principal en la cual estan contenidos todos los modulos, para empezar el modulo __init__.py que es el encargado de hacer saber a Python que se esta creando un paquete; luego el programa principal esta partido en tres modulos: Shape, Rectangle y Triangle, en ellos se ejecuta paso a paso el codigo que al final es llamado con el modulo main. De esta manera tambien se crea un solo paquete pero con mayor modularidad.
+En este caso, se organiza el código en una estructura de paquetes y módulos. Se crea una carpeta principal llamada Caso_2, que contiene un archivo __init__.py. Dentro de esta carpeta, hay una subcarpeta llamada ClassShape, que contiene los módulos necesarios para definir las figuras geométricas. Cada figura geométrica tiene su propio archivo, como Shape.py, Rectangle.py y Triangle.py. Estos archivos contienen las clases correspondientes a cada figura geométrica. Además, en la carpeta ClassShape se incluye un archivo __init__.py. Finalmente, fuera de la carpeta ClassShape, se encuentra el archivo main.py, desde donde se ejecuta el código principal.
 ```
 Caso_2/
-├── Shape/
+|
+├── __init__.py
+|
+├── ClassShape/
+|   |
 │   ├── __init__.py
-│   │── point.py
-│   │── line.py
-│   │── shape.py
-│   └── Polygons/
-│   │   │   │── __init__.py
-│   │   │   │── Equilateral.py
-│   │   │   │── Isosceles.py
-│   │   │   │── Rectangle.py
-│   │   │   │── Scalene.py
-│   │   │   │── Square.py
-│   │   │   │── Triangle.py
-│   │   │   
+│   ├── Shape.py
+│   ├── Rectangle.py
+│   └── Triangle.py
+│    
+└── main.py      
 ```
 
